@@ -2,8 +2,8 @@ const bcrypt = require("bcrypt");
 const User = require("../models/userModel");
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
-const sendEmail = require('../utils/sendEmail');
-const { resetPasswordTemplate } = require('../utils/emailTemplates');
+const sendEmail= require("../Utils/sendEmail");
+const { resetPasswordTemplate } = require("../Utils/emailTemplates");
 
 const register = async (req, res) => {
   try {
